@@ -1,0 +1,6 @@
+
+#Lost Cities Profile Generator Configuration
+[general]
+	#The profile that should be used for Lost Cities world generation
+	selectedProfile = "rarecities"
+
