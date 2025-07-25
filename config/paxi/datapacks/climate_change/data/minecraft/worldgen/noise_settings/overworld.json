@@ -9,6 +9,23 @@
       "level": "0"
     }
   },
+  "structures": {
+    "structures": {
+      "minecraft:buried_treasure": {},
+      "minecraft:desert_pyramid": {},
+      "minecraft:igloo": {},
+      "minecraft:jungle_temple": {},
+      "minecraft:mineshaft": {},
+      "minecraft:ocean_ruin": {},
+      "minecraft:pillager_outpost": {},
+      "minecraft:ruined_portal": {},
+      "minecraft:shipwreck": {},
+      "minecraft:stronghold": {},
+      "minecraft:swamp_hut": {},
+      "minecraft:village": {},
+      "minecraft:woodland_mansion": {}
+    }
+  },
   "disable_mob_generation": false,
   "legacy_random_source": false,
   "noise": {

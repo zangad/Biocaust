@@ -34,3 +34,6 @@ Challenges:
 Advantages:
 * You start in a safe bunker with advanced starting gear.
 * You can see a long ways in the distance. (Distant Horizons mod)
+
+KNOWN ISSUES:
+* Ocean Monuments have been removed from the world, so I need to provide another source for Sponge, since according to the docs, Sponges are only found in Ocean Monuments.
