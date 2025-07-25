@@ -1229,6 +1229,58 @@
                               "if_true": {
                                 "type": "minecraft:biome",
                                 "biome_is": [
+                                  "minecraft:ocean",
+                                  "minecraft:deep_ocean",
+                                  "minecraft:cold_ocean",
+                                  "minecraft:deep_cold_ocean",
+                                  "minecraft:frozen_ocean",
+                                  "minecraft:deep_frozen_ocean",
+                                  "minecraft:warm_ocean",
+                                  "minecraft:lukewarm_ocean",
+                                  "minecraft:deep_lukewarm_ocean",
+                                  "minecraft:ocean",
+                                  "minecraft:beach",
+                                  "minecraft:snowy_beach",
+                                  "minecraft:river",
+                                  "minecraft:frozen_river"
+                                ]
+                              },
+                              "then_run": {
+                                "type": "minecraft:sequence",
+                                "sequence": [
+                                  {
+                                    "type": "minecraft:condition",
+                                    "if_true": {
+                                      "type": "minecraft:vertical_gradient",
+                                      "random_name": "minecraft:mud",
+                                      "true_at_and_below": {
+                                        "absolute": 0
+                                      },
+                                      "false_at_and_above": {
+                                        "absolute": 1
+                                      }
+                                    },
+                                    "then_run": {
+                                      "type": "minecraft:block",
+                                      "result_state": {
+                                        "Name": "minecraft:mud"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "minecraft:block",
+                                    "result_state": {
+                                      "Name": "minecraft:sand"
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "type": "minecraft:condition",
+                              "if_true": {
+                                "type": "minecraft:biome",
+                                "biome_is": [
                                   "minecraft:stony_peaks"
                                 ]
                               },
@@ -1345,14 +1397,8 @@
                                 "type": "minecraft:biome",
                                 "biome_is": [
                                   "minecraft:warm_ocean",
-                                  "minecraft:ocean",
-                                  "minecraft:lukewarm_ocean",
-                                  "minecraft:deep_lukewarm_ocean",
-                                  "minecraft:deep_ocean",
                                   "minecraft:beach",
-                                  "minecraft:snowy_beach",
-                                  "minecraft:cold_ocean",
-                                  "minecraft:deep_cold_ocean"
+                                  "minecraft:snowy_beach"
                                 ]
                               },
                               "then_run": {
