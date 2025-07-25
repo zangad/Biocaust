@@ -338,6 +338,30 @@
 							{
 							"type": "minecraft:condition",
 							"if_true": {
+									"type": "minecraft:vertical_gradient",
+									"random_name": "minecraft:calcite",
+									"true_at_and_below": {"absolute": 0},
+  									"false_at_and_above": {"absolute": 1}
+								},
+							"then_run": {
+								"type": "minecraft:condition",
+								"if_true": {
+									"type": "minecraft:noise_threshold",
+									"noise": "minecraft:patch",
+									"min_threshold": -0.10,
+									"max_threshold": 0.10
+								},
+								"then_run": {
+								"type": "minecraft:block",
+								"result_state": {
+								"Name": "salt:rock_salt_ore"
+								}
+								}
+							}
+							},
+							{
+							"type": "minecraft:condition",
+							"if_true": {
   								"type": "minecraft:vertical_gradient",
   								"random_name": "minecraft:mud",
   								"true_at_and_below": {"absolute": 0},
